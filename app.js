@@ -26,18 +26,17 @@ app.get('/', (req, res) => {
   const options = {
     method:"GET"
   }
-  const request = https.request(url, options, (response)=>{
+  const request =  https.request(url, options, (response)=>{
     if (response.statusCode == "200") {
 
       response.on("data", (data) => {
         
-        let allPosts = JSON.parse(data).items;
-        res.render('home', { homeContent: homeStartingContent, allPosts: allPosts });
+        let allPosts = JSON.parse(data);
+        res.render('home', { homeContent: homeStartingContent, allPosts: allPosts.items });
 
       });
-    } else {
-      res.send("Error While Fetching Blogs")
-    }  
+    } else res.send("Error While Fetching Blogs")
+    
   })
   request.end();
 });
