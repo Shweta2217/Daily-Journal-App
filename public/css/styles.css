@@ -14,22 +14,28 @@
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
 }
+.Heading{
+    color: #1abc9c;
+}
+
+.containers{
+    min-height: 400px;
+}
 
 .footer-padding {
 	padding-bottom: 60px;
 }
 
 .footer {
-	position: absolute;
+	position: relative;
 	text-align: center;
+    padding:  20px;
 	bottom: 0;
 	width: 100%;
-	height: 60px;
 	background-color: #1abc9c;
 }
 
 .footer p {
-	margin-top: 25px;
-	font-size: 12px;
+font-size: 2rem !important;
   color: #fff;
 }
