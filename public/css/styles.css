@@ -1,14 +1,11 @@
-.container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 5px;
 }
 .navbar-nav  li a:hover {
@@ -38,4 +35,43 @@
 .footer p {
 font-size: 2rem !important;
   color: #fff;
+}
+
+@media(max-width:500px){
+   
+    .navbar {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 0.5rem !important;
+        letter-spacing: 3px;
+    }
+    .navItems{
+        font-size: 12px;
+        float :left; 
+    }
+    
+    .containers{
+        min-height: 600px;
+    }
+    
+    .footer-padding {
+        padding-bottom: 60px;
+    }
+    
+    .footer {
+        position: relative;
+        text-align: center;
+        padding:  20px;
+        bottom: 0;
+        width: 100%;
+        background-color: #1abc9c;
+    }
+    
+    .footer p {
+    font-size: 1.5rem !important;
+      color: #fff;
+    }
 }

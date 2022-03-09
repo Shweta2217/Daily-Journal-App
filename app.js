@@ -87,7 +87,6 @@ app.get('/post/:postKey', (req, res) => {
 
   let Key = req.params.postKey;
    const url = process.env.URL+"/blog/"+Key;
-   console.log(url);
 
    const options = {
      method:"GET"
@@ -99,7 +98,6 @@ app.get('/post/:postKey', (req, res) => {
 
       response.on("data", (data) => {
         let _Post = JSON.parse(data);
-        console.log(_Post);
         res.render('post', { Title : _Post.Title, Content: _Post.Content });
       });
 
